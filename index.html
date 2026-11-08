@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05060a">
+  <meta name="description" content="Ilmoz EOS — o‘quv markazlari uchun zamonaviy CRM demo.">
+  <title>Ilmoz EOS — CRM Demo</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Asosiy navigatsiya">
+      <div class="sidebar-card">
+        <a class="brand" href="#dashboard" aria-label="Ilmoz bosh sahifasi">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-6 10 6-10 6-10-6Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+          <span>Ilmoz</span>
+        </a>
+        <div class="workspace-card"><span class="online-dot" aria-hidden="true"></span><span><strong>Orbit Academy</strong><small>Owner workspace</small></span></div>
+        <div class="divider"></div>
+        <p class="nav-label">Workspace</p>
+        <nav class="nav-list" id="desktop-nav">
+          <button class="nav-button active" type="button" data-view="dashboard" aria-pressed="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Boshqaruv</span></button>
+          <button class="nav-button" type="button" data-view="groups" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg><span>Guruhlar</span></button>
+          <button class="nav-button" type="button" data-view="schedule" aria-pressed="false"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg><span>Jadval</span></button>
+          <button class="nav-button" type="button" data-view="finance" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M3 6h18v13H3z"/><path d="M3 10h18M16 15h2"/></svg><span>Moliya</span></button>
+          <button class="nav-button" type="button" data-view="analytics" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20V7"/></svg><span>Analitika</span></button>
+          <button class="nav-button" type="button" data-view="ai" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="m12 3-1.8 5.2A3 3 0 0 1 8.2 10L3 12l5.2 1.8a3 3 0 0 1 2 2L12 21l1.8-5.2a3 3 0 0 1 2-2L21 12l-5.2-1.8a3 3 0 0 1-2-2L12 3Z"/></svg><span>NexoGPT</span></button>
+        </nav>
+        <div class="insight-card"><strong><span aria-hidden="true">✦</span> Nexo insight</strong><p>3 o‘quvchiga yangi guruh tavsiya qilindi.</p></div>
+      </div>
+    </aside>
+
+    <div class="main-column">
+      <header class="topbar-wrap"><div class="topbar">
+        <div class="mobile-brand"><span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-6 10 6-10 6-10-6Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><strong>Ilmoz</strong></div>
+        <div class="breadcrumb"><strong>Ilmoz</strong><span>/</span><span>Orbit Academy</span></div>
+        <div class="profile-area">
+          <button class="icon-button" type="button" aria-label="Bildirishnomalar" data-toast="Yangi bildirishnomalar yo‘q"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg></button>
+          <span class="language">UZ</span><span class="avatar">AK</span><span class="profile-copy"><strong>Akmal Karimov</strong><small>Owner</small></span>
+        </div>
+      </div></header>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobil navigatsiya">
+        <button class="active" type="button" data-view="dashboard" aria-label="Boshqaruv" aria-pressed="true">⌂</button>
+        <button type="button" data-view="groups" aria-label="Guruhlar" aria-pressed="false">♙</button>
+        <button type="button" data-view="schedule" aria-label="Jadval" aria-pressed="false">□</button>
+        <button type="button" data-view="finance" aria-label="Moliya" aria-pressed="false">₿</button>
+        <button type="button" data-view="analytics" aria-label="Analitika" aria-pressed="false">▥</button>
+        <button type="button" data-view="ai" aria-label="NexoGPT" aria-pressed="false">✦</button>
+      </nav>
+
+      <main class="content">
+        <div class="page-heading"><div><h1 id="page-title">Xayrli tong, Akmal</h1><p id="page-subtitle">Bugungi markaz holati va asosiy ko‘rsatkichlar</p></div><button class="report-button" type="button" id="report-button"><span>↗</span> Hisobot</button></div>
+        <section id="view-root" aria-live="polite"></section>
+      </main>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
